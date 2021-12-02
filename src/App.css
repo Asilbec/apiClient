@@ -16,7 +16,6 @@ html {
   display: flex;
   max-width: 96vw;
   margin: auto;
-  display: none;
 }
 
 #address {
@@ -61,6 +60,7 @@ html {
   color: white;
   font-family: " Malgun Gothic", monospace;
   line-height: 0px;
+  display: none;
 }
 #Current {
   width: fit-content;

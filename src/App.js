@@ -91,7 +91,7 @@ function App() {
 
   function send() {
     document.getElementById("front").style.display = 'none'
-    document.getElementById("givenData").style.display = 'flex'
+    document.getElementById("givenData").style.display = 'grid'
     axios.post('https://calm-harbor-33572.herokuapp.com/sendData', {
       Address: document.getElementById('address').value
     }
