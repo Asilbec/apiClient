@@ -14,7 +14,6 @@ function Card(props) {
 }
 
 
-
 function App() {
 
   const [dayOne, newDayOne] = useState({
@@ -93,7 +92,7 @@ function App() {
   function send() {
     document.getElementById("front").style.display = 'none'
     document.getElementById("givenData").style.display = 'flex'
-    axios.post('http://localhost:9000/sendData', {
+    axios.post('https://calm-harbor-33572.herokuapp.com/sendData', {
       Address: document.getElementById('address').value
     }
     )
