@@ -16,6 +16,7 @@ html {
   display: flex;
   max-width: 96vw;
   margin: auto;
+  display: none;
 }
 
 #address {
@@ -60,7 +61,6 @@ html {
   color: white;
   font-family: " Malgun Gothic", monospace;
   line-height: 0px;
-  display: none;
 }
 #Current {
   width: fit-content;
@@ -153,4 +153,60 @@ html {
   position: absolute;
   top: 1vw;
   left: 1vw;
+}
+
+@media only screen and (max-width: 600px) {
+  #currentGrid {
+    margin: auto;
+  }
+  #Current {
+    width: fit-content;
+    height: fit-content;
+    position: absolute;
+    top: 0;
+    margin: auto;
+    max-width: 99vw;
+    text-align: center;
+  }
+  #currentTemp {
+    font-size: 10vw;
+    line-height: 10px;
+  }
+
+  #currentLocation {
+    font-size: 3vw;
+    color: rgb(255, 255, 255);
+    line-height: 2vw;
+    background-color: rgba(255, 255, 255, 0);
+    max-width: 20vw;
+    word-wrap: break-word;
+  }
+
+  #currentTime {
+    font-size: 3vw;
+    line-height: 1vw;
+    color: rgb(255, 255, 255);
+  }
+  .forcast {
+    width: 100%;
+    height: 50%;
+    background-color: rgba(0, 0, 0, 0);
+    position: absolute;
+    bottom: 0;
+    line-height: 0px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+  }
+
+  .Card {
+    margin: auto;
+    width: 13vw;
+    height: 13vw;
+    background-color: rgba(0, 0, 0, 0);
+    color: rgb(255, 255, 255);
+    display: grid;
+    text-align: center;
+    font-family: " Malgun Gothic", monospace;
+    font-size: 2vw;
+  }
 }
